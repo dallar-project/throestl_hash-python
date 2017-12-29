@@ -73,7 +73,7 @@ PyMODINIT_FUNC PyInit_throestl_gethash(void) {
 
 #else
 
-PyMODINIT_FUNC initthroestl_gethash(void) {
-    (void) Py_InitModule("throestl_gethash", ThroestlMethods);
+PyMODINIT_FUNC initthroestl_hash(void) {
+    (void) Py_InitModule("throestl_hash", ThroestlMethods);
 }
 #endif
