@@ -59,15 +59,15 @@ static PyMethodDef ThroestlMethods[] = {
 };
 
 #if PY_MAJOR_VERSION >= 3
-static struct PyModuleDef GroestlcoinModule = {
+static struct PyModuleDef ThroestlModule = {
     PyModuleDef_HEAD_INIT,
-    "throestl_gethash",
+    "throestl_hash",
     "...",
     -1,
     ThroestlMethods
 };
 
-PyMODINIT_FUNC PyInit_throestl_gethash(void) {
+PyMODINIT_FUNC PyInit_throestl_hash(void) {
     return PyModule_Create(&ThroestlModule);
 }
 
