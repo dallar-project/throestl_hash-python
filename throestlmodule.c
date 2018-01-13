@@ -1,4 +1,13 @@
 #include <Python.h>
+
+#ifdef _MSC_VER
+    typedef unsigned __int32 uint32_t;
+    typedef __int32 int32_t;
+    typedef __int64 int64_t;
+#else
+    #include <stdint.h>
+#endif
+
 #include "sph_groestl.h"
 
 static void ThroestlHash(const char *input, int length, char *output)

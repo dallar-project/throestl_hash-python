@@ -1,9 +1,9 @@
 from distutils.core import setup, Extension
 
-throestl_hash_module = Extension('throestl_hash', sources = ['throestlmodule.c', 'groestl.c'])
+throestl_hash_module = Extension('throestl_hash', sources = ['throestlmodule.c', 'throestl.c'])
 
 setup (name = 'throestl_hash',
-    version = '1.0.0',
+    version = '1.1.0',
     description = 'Throestl hash algorithm.',
     maintainer = 'Allar',
     maintainer_email = 'allar@gamemak.in',
